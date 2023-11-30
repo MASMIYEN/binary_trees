@@ -8,14 +8,14 @@
  */
 void binary_tree_delete(binary_tree_t *tree)
 {
-	/* 	return if node is null */
+	/* return if node is null */
 	if (tree == NULL)
 		return;
 
-	/* 	recursively delete the left subtreees */
+	/* recursively delete the left subtreees */
 	binary_tree_delete(tree->left);
-	/* 	recursively delete the right subtreees if has no left */
+	/* recursively delete the right subtreees if has no left */
 	binary_tree_delete(tree->right);
-	/* 	free the node if it has no children */
+	/* free the node if it has no children */
 	free(tree);
 }
