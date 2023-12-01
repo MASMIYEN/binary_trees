@@ -13,7 +13,7 @@ size_t max_depth(const binary_tree_t *node);
 int is_perfect(const binary_tree_t *tree, int d, int level)
 {
 	if (!tree)
-		return (1);
+		return (0);
 
 	if (!tree->left && !tree->right)
 		return (d == level);
@@ -36,7 +36,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	int d = max_depth(tree);
 
 	if (!tree)
-		return (1);
+		return (0);
 
 	return (is_perfect(tree, d, 1));
 }
