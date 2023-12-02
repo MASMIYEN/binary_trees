@@ -1,12 +1,12 @@
 #include "binary_trees.h"
 /**
- * binary_tree_rotate_left - do left rotation of the tree
+ * binary_tree_rotate_right - do right rotation of the tree
  *
  * @tree: the binary tree
  *
  * Return: the new root of the tree
  */
-binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree)
+binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree)
 {
 	if (tree == NULL)
 		return (NULL);
